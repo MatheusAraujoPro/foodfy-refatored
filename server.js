@@ -14,3 +14,13 @@ server.use('/', require('./src/routes'))
 
 //configurando a engine
 server.set('view engine', 'html')
+
+//configurar o nunjucks
+nunjucks.configure('./src/views', {
+    express:server,
+    noCache:true
+})
+
+//setar o endereço dos arquivos estáticos
+server.use(express.static('./src/public'))
+

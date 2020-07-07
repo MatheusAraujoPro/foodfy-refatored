@@ -1,0 +1,200 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap';
+
+:root{
+    --color-black: #000;
+}
+
+header div {
+    margin-left: 270px;
+    margin-top: 36px;
+}
+
+.menu{
+   margin-bottom: 30px;
+}
+
+.menu #initial {
+    margin-right: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--color-black);
+    font-size: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: var(--color-black);
+}
+
+#wrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#logo{
+    width: 940px;
+    height: 366px;
+    background-color:#FBDFDB;
+    margin: 0 auto;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 0.5fr;
+    
+    
+}
+
+#text__logo{
+    padding-left: 50px;
+    padding-top: 70px;
+}
+
+#text__logo h1{    
+    font-size: 30px;
+    text-align: start;
+    
+}
+
+#paragraph {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+#img__logo {
+    width: 200px;
+    height: 300px;
+    margin-left: 320px;
+    padding-top: 60px;
+    
+}
+
+#text__indicator {
+    text-align: left;
+    margin-left: 280px;
+    margin-bottom: -90px;
+}
+
+/*      GRID DE CARDS    */
+
+#grid {
+    margin-left: 280px;
+    margin-right: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px
+}
+
+
+.card {
+    padding-top: 100px;
+    width: 300px;
+    height: 140px;    
+}
+
+.card__img img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+}
+
+.card__content { 
+    padding-top: 10px;
+    text-align: left;
+    font-family: 'Roboto-regular', sans-serif;
+    color: #111111;
+}
+
+.card__info {  
+    padding-top: -30px;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    color: #777777;
+    text-align: left;    
+}
+
+footer {
+   
+    margin-top: 150px;
+    padding: 0.3px;
+    background: #EEEEEE;
+    font-family: Roboto-Regular;
+
+}
+
+
+/*      PAGE SOBRE      */
+
+.container {
+    text-align: justify;
+    margin-left: 220px;
+    margin-right: 200px;
+}
+
+#title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#text {
+    font-size: 20px;
+    line-height: 25px;
+    font-family: Roboto-Regular;
+}
+
+
+/*       MODAL       */
+.modal__overlay {
+    
+    background-color: rgba(0, 0,3, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:10px;
+    opacity: 1; 
+    margin: 0 auto;
+    visibility: hidden;
+    opacity: 0;
+
+    
+}
+
+.modal {
+    width: 600px;
+    height: 443;
+    background-color: white;
+    position: relative;
+    margin-left: 400px;
+    margin-right: 310px;
+    margin-top: 200PX;
+    border-radius: 8px;
+   
+}
+
+.modal .close__modal {
+    right: 0;
+}
+
+.modal__overlay.actived{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__content {
+   margin: 0 auto;
+}
+
+.modal__content img {
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    margin-left: 100px;
+    
+}
+
+.modal__content p {
+    text-align: center;
+}
+
+
+

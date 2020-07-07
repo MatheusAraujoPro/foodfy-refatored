@@ -7,8 +7,17 @@ const routes   =     express.Router()
 
 //Rotas
 routes.get('/', (req, res)=>{
-  res.send('hello world')
+  res.render('index')
 })
+
+routes.get('/receitas', (req, res)=>{
+  res.render('receitas')
+})
+
+routes.get('/sobre', (req, res)=>{
+  res.render('sobre')
+})
+
 
 //Exportando o módulo
 module.exports = routes
