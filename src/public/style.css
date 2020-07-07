@@ -113,8 +113,7 @@ header div {
     text-align: left;    
 }
 
-footer {
-   
+#footer {   
     margin-top: 150px;
     padding: 0.3px;
     background: #EEEEEE;
@@ -198,4 +197,38 @@ footer {
 
 
 
-/*       PAGE RECEITA       */
+/*    PAGE RECEITA    */
+#recept__img {
+    margin-left: 20px;        
+    margin-top: 50px;
+}
+
+#recept__img img {
+    border-radius: 10px;
+    width: 1100px;   
+    max-height: 250px;
+}
+
+#recept__title {
+    margin-left: 400px; 
+}
+
+#recept__subtitle {
+    margin-left: 440px; 
+}
+
+.label {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#ingredients {
+    
+    margin-bottom: 30px;
+}
+
+#prepare {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+

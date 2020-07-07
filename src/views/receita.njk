@@ -15,8 +15,10 @@
                     <div id="recept__subtitle">
                         <h2>{{item.subtitle}}</h2>
                     </div>
-
-                <span id="ingredients__label">Ingredientes</span>
+                    
+                    <div class="label" id="ingredients">
+                        <span>Ingredientes</span>
+                    </div>                
                     
                     <div id="repect__ingredients">
                     {%for ingredient in item.ingredients%}
@@ -26,17 +28,28 @@
                     {% endfor %}                
                     </div> 
 
-                <span id="prepare__label">Modo de preparo</span><br>
+                    <div class="label" id="prepare">
+                        <span>Modo de preparo</span>
+                    </div>
 
-                <span id="Information__label">Informações adicionais</span>
+                    <div class="label" id="description">
+                        <span>Informais adicionais</span>
+                    </div>
 
                     <div id="repect__prepare">
                         <p>{{item.prepare}}</p>
                     </div>
 
             {% endfor %}
-                      
+                                              
         </div>
+            <div id="wrapper">
+                <footer>
+                    <div id="footer">
+                        <p>Copyright foodfy</p>
+                    </div>
+                </footer>
+            </div>
      
     </body>
 {% endblock %}
