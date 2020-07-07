@@ -1,6 +1,7 @@
 /*           IMPORTS                */
 
 const express  =   require('express')
+const data     =   require('../data')
 
 //criando o roteador
 const routes   =     express.Router()
@@ -16,6 +17,11 @@ routes.get('/receitas', (req, res)=>{
 
 routes.get('/sobre', (req, res)=>{
   res.render('sobre')
+})
+
+routes.get('/receita', (req, res)=>{
+  
+  return res.render('receita', {data})
 })
 
 
