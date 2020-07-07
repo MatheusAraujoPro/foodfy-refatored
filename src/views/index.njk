@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Foodfy - Seu restaurante</title>
-    <link rel="stylesheet" href="/style.css" />
-  </head>
+{% extends 'layout.njk'%}
 
-  <body>
-    <header>
-      <!-- MENU DO SITE -->
-      <div class="menu">
-        <a href="/index" id="initial">Foodfy</a>
-        <a href="/sobre">Sobre</a>
-        <a href="/receitas">Receitas</a>
-      </div>
-    </header>
-
+{% block content %}
     <div id="wrapper">
       <!-- ÁREA DO LOGO -->
       <section id="logo">  
@@ -134,6 +120,7 @@
       </footer>
 
     </div>
+{% endblock %}
 
     <script src="scripts.js"></script>
   </body>

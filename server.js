@@ -13,7 +13,7 @@ server.listen(8080, ()=>{
 server.use('/', require('./src/routes'))
 
 //configurando a engine
-server.set('view engine', 'html')
+server.set('view engine', 'njk')
 
 //configurar o nunjucks
 nunjucks.configure('./src/views', {
