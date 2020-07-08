@@ -20,8 +20,22 @@ routes.get('/sobre', (req, res)=>{
 })
 
 routes.get('/receita', (req, res)=>{
+  const urlId = req.query.id
+
+  const item = data.find((item)=> {
+      if(item.id == urlId)
+        return true
+  })
+
+    if(!item) {
+      return res.send('Receita is not found') 
+   }
+
   
-  return res.render('receita', {data})
+  return res.render('receita', {receita: item})
+  
+
+
 })
 
 

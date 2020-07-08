@@ -210,11 +210,13 @@ header div {
 }
 
 #recept__title {
-    margin-left: 400px; 
+    margin-left: 50%;
+     
 }
 
 #recept__subtitle {
-    margin-left: 440px; 
+    margin-left: 50%; 
+    font-weight: normal;
 }
 
 .label {

@@ -4,16 +4,16 @@
     <body>
      
         <div class="container">
-            {% for item in data %}
+          
                 <div id="recept__img">
-                    <img src="{{item.img}}" alt="">
+                    <img src="{{ receita.img }}" alt="">
                 </div>
                 
                     <div id="recept__title">
-                    <h1>{{item.name}}</h1>
+                    <h1>{{ receita.name }}</h1>
                     </div>
                     <div id="recept__subtitle">
-                        <h2>{{item.subtitle}}</h2>
+                        <p>{{receita.subtitle}}</p>
                     </div>
                     
                     <div class="label" id="ingredients">
@@ -21,7 +21,7 @@
                     </div>                
                     
                     <div id="repect__ingredients">
-                    {%for ingredient in item.ingredients%}
+                    {%for ingredient in receita.ingredients%}
                         <ul>
                             <li>{{ingredient.ingredient_name}}</li>
                         </ul>
@@ -37,10 +37,10 @@
                     </div>
 
                     <div id="repect__prepare">
-                        <p>{{item.prepare}}</p>
+                        <p>{{receita.prepare}}</p>
                     </div>
 
-            {% endfor %}
+           
                                               
         </div>
             <div id="wrapper">

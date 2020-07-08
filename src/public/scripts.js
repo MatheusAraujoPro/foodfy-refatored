@@ -6,13 +6,19 @@ const cardContent    = modalOverlay.querySelector('.modal__content');
 
 for (let card of cardCollection){
     card.addEventListener('click' , ()=>{
-        //let cardId = card.getAttribute('id');        
+        let cardId = card.getAttribute('id');
+       /*         
         modalOverlay.classList.add('actived');
 
         card.classList.remove('card');
         card.classList.add('modal__content')
 
-        cardContent.append(card);        
+        cardContent.append(card);  
+        */
+       
+        window.location.href= `/receita?id=${cardId}`
+        
+
     })
 }
 
